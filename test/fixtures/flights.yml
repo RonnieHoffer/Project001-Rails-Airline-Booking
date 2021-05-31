@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flight_number: MyString
+  aircraft_id: 1
+  depart_airport_id: 1
+  arriv_airport_id: 1
+  date: 2021-05-30
+  depart_time: 2021-05-30 22:09:39
+  arriv_time: 2021-05-30 22:09:39
+  total_economy_seats: 1
+  total_business_seats: 1
+  total_first_class_seats: 1
+  remaining_economy_seats: 1
+  remaining_business_seats: 1
+  remaining_first_class_seats: 1
+
+two:
+  flight_number: MyString
+  aircraft_id: 1
+  depart_airport_id: 1
+  arriv_airport_id: 1
+  date: 2021-05-30
+  depart_time: 2021-05-30 22:09:39
+  arriv_time: 2021-05-30 22:09:39
+  total_economy_seats: 1
+  total_business_seats: 1
+  total_first_class_seats: 1
+  remaining_economy_seats: 1
+  remaining_business_seats: 1
+  remaining_first_class_seats: 1
