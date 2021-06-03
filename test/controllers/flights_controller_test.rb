@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AirportControllerTest < ActionDispatch::IntegrationTest
+class FlightsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

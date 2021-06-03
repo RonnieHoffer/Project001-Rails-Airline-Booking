@@ -1,4 +1,4 @@
-class AirportController < ApplicationController
+class AircraftsController < ApplicationController
 
     def index
     end
