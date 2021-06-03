@@ -1,1 +1,9 @@
 <h1> This is the Aircraft index </h1>
+
+<ul>
+    <% @aircrafts.each do |aircraft| %>
+        <li>
+            <%= aircraft.model %>
+        </li>
+    <% end %>
+</ul>
