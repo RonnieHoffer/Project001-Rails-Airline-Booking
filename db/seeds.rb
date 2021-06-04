@@ -15,6 +15,10 @@ User.delete_all
 
 aircraft_1 = Aircraft.create(model: "Boeing 737-800", economy_seats: 162, 
     business_seats: 12, first_class_seats: 0)
+aircraft_2 = Aircraft.create(model: "Boeing 767-300ER", economy_seats: 219, 
+    business_seats: 36, first_class_seats: 24)
+aircraft_3 = Aircraft.create(model: "Boeing 787-9 Dreamliner", economy_seats: 204, 
+    business_seats: 48, first_class_seats: 0)
 
 airport_1 = Airport.create(city: "London", country: "UK")
 airport_2 = Airport.create(city: "Paris", country: "France")
