@@ -5,17 +5,19 @@ class AircraftsController < ApplicationController
     end
 
     def new
+        @aircraft = Aircraft.new
     end
 
     def edit
+        @aircraft = Aircraft.find(params[:id])
     end
 
     def create
-        @aircraft = Aircraft.new
-        @aircraft.model = params[:model]
-        @aircraft.economy_seats = params[:economy_seats]
-        @aircraft.business_seats = params[:business_seats]
-        @aircraft.first_class_seats = params[:first_class_seats]
+        @aircraft = Aircraft.new(aircraft_params)
+        # @aircraft.model = params[:model]
+        # @aircraft.economy_seats = params[:economy_seats]
+        # @aircraft.business_seats = params[:business_seats]
+        # @aircraft.first_class_seats = params[:first_class_seats]
         if @aircraft.save
             redirect_to '/aircrafts'
         else
@@ -32,5 +34,12 @@ class AircraftsController < ApplicationController
     def show
         @aircraft = Aircraft.find(params[:id])
     end
+
+
+    private
+    def aircraft_params
+        params.require(:aircraft).permit(:model, :economy_seats, :business_seats, :first_class_seats)
+    end
+
 
 end

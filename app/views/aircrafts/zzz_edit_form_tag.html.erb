@@ -1,0 +1,24 @@
+<h1> Edit an Aircraft </h1>
+
+<%= form_tag "/aircrafts/:id" do %>
+    
+    <p>
+        <%= label_tag :model %> <br>
+        <%= text_field_tag :model %> <br>
+    </p>
+    <p>
+        <%= label_tag :economy_seats %> <br>
+        <%= text_field_tag :economy_seats %> <br>
+    </p>
+    <p>
+        <%= label_tag :business_seats %> <br>
+        <%= text_field_tag :business_seats %> <br>
+    </p>
+    <p>
+        <%= label_tag :first_class_seats %> <br>
+        <%= text_field_tag :first_class_seats %> <br>
+    </p>
+
+    <%= submit_tag "Save" %>
+
+<% end %>

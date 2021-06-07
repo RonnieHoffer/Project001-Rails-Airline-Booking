@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'aircrafts/new' => 'aircrafts#new'
   post 'aircrafts' => 'aircrafts#create'
   get 'aircrafts/:id' => 'aircrafts#show'
+  get 'aircrafts/:id/edit/' => 'aircrafts#edit'
+  patch 'aircrafts/:id' => 'aircrafts#update'
+
 
 
   get 'airports' => 'airports#index'
