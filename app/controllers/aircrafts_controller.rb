@@ -23,6 +23,13 @@ class AircraftsController < ApplicationController
     end
 
     def update
+        @aircraft = Aircraft.find(params[:id])
+        
+        if @aircraft.update_attributes(aircraft_params)
+            redirect_to aircraft_path
+        else
+            render :edit
+        end
     end
 
     def destroy
