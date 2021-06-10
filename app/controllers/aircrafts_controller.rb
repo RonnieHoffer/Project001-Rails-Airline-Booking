@@ -26,6 +26,9 @@ class AircraftsController < ApplicationController
     end
 
     def destroy
+        @aircraft = Aircraft.find(params[:id])
+        @aircraft.destroy
+        redirect_to aircrafts_url
     end
 
     def show

@@ -8,3 +8,6 @@
     <label>Number of First Class Seats:</label>
     <p><%=@aircraft.first_class_seats%></p>
 </div>
+
+<%= link_to "Delete Aircraft", aircraft_path(@aircraft), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Back to Aircraft Index", aircrafts_path %>

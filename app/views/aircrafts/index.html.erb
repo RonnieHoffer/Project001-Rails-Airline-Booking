@@ -1,9 +1,11 @@
-<h1> This is the Aircraft index </h1>
+<h1> This is the Aircraft Index </h1>
+
+<%= link_to "Add and aircraft", new_aircraft_path %>
 
 <ul>
     <% @aircrafts.each do |aircraft| %>
         <li>
-            <%= aircraft.model %>
+            <%= link_to aircraft.model, aircraft_path(aircraft.id)%>
         </li>
     <% end %>
 </ul>
