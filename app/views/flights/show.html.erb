@@ -1,0 +1,61 @@
+<h1> Flight Details </h1>
+
+<div>
+<p>
+    <label> Flight Number: </label>
+    <%=@flight.flight_number%>
+</p>
+<p>
+    <label> Aircraft model: </label>
+    <%=@aircraft.model%> (Aircraft ID: <%=@flight.aircraft_id%>)
+</p>
+<p>
+    <label> Departure Airport: </label>
+    <%=@departure_airport.city%>, <%=@departure_airport.country%> (Airport ID: <%=@flight.depart_airport_id%>)
+</p>
+<p>
+    <label> Arrival Airport: </label>
+    <%=@arrival_airport.city%>, <%=@arrival_airport.country%> (Airport ID: <%=@flight.arriv_airport_id%>)
+</p>
+<p>
+    <label> Date: </label>
+    <%= @flight.date %>
+</p>
+<p>
+    <label> Departure Time: </label>
+    <%=@flight.depart_time%>
+</p>
+<p>
+    <label> Arrival Time: </label>
+    <%=@flight.arriv_time%>
+</p>
+<p>
+    <label> Total Economy Class Seats: </label>
+    <%=@aircraft.economy_seats%>
+</p>
+<p>
+    <label> Total Business Class Seats: </label>
+    <%=@aircraft.business_seats%>
+</p>
+<p>
+    <label> Total First Class Seats: </label>
+    <%=@aircraft.first_class_seats%>
+</p>
+<p>
+    <label> Remaining Economy Class Seats: </label>
+    ????????????
+</p>
+<p>
+    <label> Remaining Business Class Seats: </label>
+    ????????????
+</p>
+<p>
+    <label> Remaining First Class Seats: </label>
+    ????????????
+</p>
+
+
+
+
+</div>
+

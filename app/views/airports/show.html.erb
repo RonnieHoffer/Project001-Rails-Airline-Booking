@@ -1,10 +1,14 @@
 <h1> Airport Details </h1>
 
 <div>
+<p>
     <label> City: </label>
-    <p><%=@airport.city%></p>
+    <%=@airport.city%>
+</p>
+<p>
     <label> Country: </label>
-    <p><%=@airport.country%></p>
+    <%=@airport.country%>
+</p>
 </div>
 
 <%= link_to "Edit this Airport", edit_airport_path %>

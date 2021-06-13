@@ -1,0 +1,36 @@
+<%= form_for @flight do |f| %>
+
+    <p>
+        <%= f.label :flight_number %>
+        <%= f.text_field :flight_number %>       
+    </p>
+    <p>
+        <%= f.label :aircraft_ID %>
+        <%= f.text_field :aircraft_id %>       
+    </p>
+    <p>
+        <%= f.label :departure_airport_ID %>
+        <%= f.text_field :depart_airport_id %>       
+    </p>
+    <p>
+        <%= f.label :arrival_airport_ID %>
+        <%= f.text_field :arriv_airport_id %>       
+    </p>
+    <p>
+        <%= f.label :date %>
+        <%= f.text_field :date %>       
+    </p>
+    <p>
+        <%= f.label :departure_time %>
+        <%= f.text_field :depart_time %>       
+    </p>
+    <p>
+        <%= f.label :arrival_time %>
+        <%= f.text_field :depart_time %>       
+    </p>
+
+    
+
+    <%= f.submit "Save" %>
+
+<% end %>

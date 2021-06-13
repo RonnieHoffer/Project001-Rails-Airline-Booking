@@ -1,2 +1,11 @@
 <h1> This is the Flight index </h1>
 
+<%= link_to "Add a flight", new_flight_path %>
+
+<ul>
+    <% @flights.each do |flight| %>
+        <li>
+            <%= link_to flight.flight_number, flight_path(flight.id)%>            
+        </li>
+    <% end %>
+</ul>
