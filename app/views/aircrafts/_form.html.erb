@@ -1,0 +1,22 @@
+<%= form_for @aircraft do |f| %>
+    
+    <p>
+        <%= f.label :model %>
+        <%= f.text_field :model %>       
+    </p>
+    <p>
+        <%= f.label :economy_seats %>
+        <%= f.text_field :economy_seats %>       
+    </p>
+    <p>
+        <%= f.label :business_seats %>
+        <%= f.text_field :business_seats %>       
+    </p>
+    <p>
+        <%= f.label :first_class_seats %>
+        <%= f.text_field :first_class_seats %>       
+    </p>
+
+    <%= f.submit "Save" %>
+
+<% end %>
