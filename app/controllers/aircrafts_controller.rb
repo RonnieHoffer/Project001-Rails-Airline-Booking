@@ -15,7 +15,7 @@ class AircraftsController < ApplicationController
     def create
         @aircraft = Aircraft.new(aircraft_params)
         if @aircraft.save
-            redirect_to '/aircrafts'
+            redirect_to aircrafts_url
         else
             render plain: "Sorry.  Aircraft was not created."
             # render :new

@@ -1,4 +1,4 @@
-<h1> Edit an Aircraft </h1>
+<h1> Edit Aircraft </h1>
 
 <%= form_for @aircraft do |f| %>
     
@@ -22,3 +22,6 @@
     <%= f.submit "Save" %>
 
 <% end %>
+
+<br>
+<%= link_to "Back to aircraft details", aircraft_path(@aircraft.id)%>

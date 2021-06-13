@@ -1,1 +1,11 @@
 <h1> This is the Airport index </h1>
+
+<%= link_to "Add and airport", new_airport_path %>
+
+<ul>
+    <% @airports.each do |airport| %>
+        <li>
+            <%= link_to airport.city, airport_path(airport.id)%>
+        </li>
+    <% end %>
+</ul>

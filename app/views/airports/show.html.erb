@@ -1,0 +1,12 @@
+<h1> Airport Details </h1>
+
+<div>
+    <label> City: </label>
+    <p><%=@airport.city%></p>
+    <label> Country: </label>
+    <p><%=@airport.country%></p>
+</div>
+
+<%= link_to "Edit this Airport", edit_airport_path %>
+<%= link_to "Delete Airport", airport_path(@airport), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Back to Airport Index", airports_path %>
