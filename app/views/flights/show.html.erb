@@ -23,39 +23,38 @@
 </p>
 <p>
     <label> Departure Time: </label>
-    <%=@flight.depart_time%>
+    <%=@flight.depart_time.strftime("%I:%M %p")%>
 </p>
 <p>
     <label> Arrival Time: </label>
-    <%=@flight.arriv_time%>
+    <%=@flight.arriv_time.strftime("%I:%M %p")%>
 </p>
 <p>
     <label> Total Economy Class Seats: </label>
-    <%=@aircraft.economy_seats%>
+    <%=@flight.total_economy_seats%>
 </p>
 <p>
     <label> Total Business Class Seats: </label>
-    <%=@aircraft.business_seats%>
+    <%=@flight.total_business_seats%>
 </p>
 <p>
     <label> Total First Class Seats: </label>
-    <%=@aircraft.first_class_seats%>
+    <%=@flight.total_first_class_seats%>
 </p>
 <p>
     <label> Remaining Economy Class Seats: </label>
-    ????????????
+    <%=@flight.remaining_economy_seats%>
 </p>
 <p>
     <label> Remaining Business Class Seats: </label>
-    ????????????
+    <%=@flight.remaining_business_seats%>
 </p>
 <p>
     <label> Remaining First Class Seats: </label>
-    ????????????
+    <%=@flight.remaining_first_class_seats%>
 </p>
-
-
-
-
 </div>
 
+<%= link_to "Edit this Flight", edit_flight_path %>
+<%= link_to "Delete Flight", flight_path(@flight), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Back to Flight Index", flights_path %>

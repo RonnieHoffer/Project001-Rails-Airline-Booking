@@ -5,28 +5,28 @@
         <%= f.text_field :flight_number %>       
     </p>
     <p>
-        <%= f.label :aircraft_ID %>
-        <%= f.text_field :aircraft_id %>       
+        <%= f.label :aircraft %>
+        <%= f.collection_select :aircraft_id, Aircraft.order(:id), :id, :model %>       
     </p>
     <p>
-        <%= f.label :departure_airport_ID %>
-        <%= f.text_field :depart_airport_id %>       
+        <%= f.label :departure_airport %>
+        <%= f.collection_select :depart_airport_id, Airport.order(:id), :id, :city %>       
     </p>
     <p>
-        <%= f.label :arrival_airport_ID %>
-        <%= f.text_field :arriv_airport_id %>       
+        <%= f.label :arrival_airport %>
+        <%= f.collection_select :arriv_airport_id, Airport.order(:id), :id, :city %>       
     </p>
     <p>
         <%= f.label :date %>
-        <%= f.text_field :date %>       
+        <%= f.date_field :date %>       
     </p>
     <p>
         <%= f.label :departure_time %>
-        <%= f.text_field :depart_time %>       
+        <%= f.time_field :depart_time %>       
     </p>
     <p>
         <%= f.label :arrival_time %>
-        <%= f.text_field :arriv_time %>       
+        <%= f.time_field :arriv_time %>       
     </p>
 
     
